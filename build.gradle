@@ -1,19 +1,41 @@
 plugins {
-    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.10' apply false
 }
 
-group 'de.prog3'
-version '1.0-SNAPSHOT'
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'application'
 
-repositories {
-    mavenCentral()
-}
+    group 'de.medieninformatik'
+    version '1.0-SNAPSHOT'
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
 
-test {
-    useJUnitPlatform()
+    ext {
+        junitVersion = '5.8.1'
+        tomcatVersion = '10.0.12'
+    }
+
+    run {
+        standardInput = System.in
+        standardOutput = System.out
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+        testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    }
+
+    test {
+        useJUnitPlatform()
+    }
 }

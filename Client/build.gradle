@@ -2,8 +2,12 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version 'unspecified'
+application {
+    mainClass = "${group}.${project.name.toLowerCase()}.Main"
+}
+
+group 'de.medieninformatik'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -16,4 +20,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': application.mainClassName
+        )
+    }
 }

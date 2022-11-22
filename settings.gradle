@@ -1,2 +1,4 @@
 rootProject.name = 'prog3_newsWS'
-
+include 'Client'
+include 'Server'
+include 'Common'
