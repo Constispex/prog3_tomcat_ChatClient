@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatClient</title>
+</head>
+<body>
+<h1>ChatClient</h1>
+<script>
+    var chatClient = new WebSocket("ws://localhost:8080/NewsWS/chatClient");
+
+    chatClient.onmessage = function (evt) {
+        var p = document.createElement("p");
+        p.setAttribute("class", "server");
+        p.innerHTML = "Server: " + evt.data;
+        var container = document.getElementById("container");
+        container.appendChild(p);
+    };
+
+    function send() {
+        var input = document.getElementById("message");
+        var p = document.createElement("p");
+        p.setAttribute("class", "client");
+        p.innerHTML = "Me: " + input.value;
+        var container = document.getElementById("container");
+        container.appendChild(p);
+        chatClient.send(input.value);
+        input.value = "";
+    }
+</script>
+
+<input id="message" name="message" type="text"/>
+<button id="send" onclick="send()" type="button">Send</button>
+</body>
+</html>

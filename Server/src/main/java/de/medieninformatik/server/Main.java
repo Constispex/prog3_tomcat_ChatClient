@@ -38,7 +38,7 @@ public class Main {
                 con.getPort() + ctx.getPath();
         System.out.printf("URL: %s%n", url);
 
-        Thread t = new Thread(Nachricht.quelle());
+        Thread t = new Thread(ChatServer.quelle());
         t.start();
         javax.swing.JOptionPane.showMessageDialog(null, "Server beenden!");
         t.interrupt();

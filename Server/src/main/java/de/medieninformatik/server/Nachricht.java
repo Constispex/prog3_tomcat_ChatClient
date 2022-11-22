@@ -25,7 +25,7 @@ public class Nachricht {
             Random r = new Random();
             while (!Thread.interrupted()) {
                 try {
-                    Thread.sleep(1000 * (1 + r.nextInt(5)));
+                    Thread.sleep(100 * (1 + r.nextInt(5)));
                     LocalTime current = LocalTime.now();
                     String nachricht = String.format("[Nachricht um %s] Counter: %d%n",
                             current.format(fmt), counter.incrementAndGet());

@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62a95eaf-af67-44d4-819a-80d001576117" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/de/medieninformatik/client/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/de/medieninformatik/common/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/de/medieninformatik/common/DummyClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="62a95eaf-af67-44d4-819a-80d001576117" name="Changes" comment="impl NewsWS">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/web/chatClient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/web/naews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Client/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/de/prog3/client/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Server/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/prog3/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/prog3/server/Nachricht.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Nachricht.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Nachricht.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/de/medieninformatik/server/Nachricht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/web/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Server/web/news.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +42,24 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="prog3_newsWS" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prog3_newsWS" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prog3_newsWS" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prog3_newsWS" type="f1a62948:ProjectNode" />
+                <item name="Client" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -88,6 +97,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -105,20 +115,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-17",
-    "last_opened_file_path": "C:/Users/Constantin/Documents/Studium/proggen3/Aufgabe_vom_2022-11-21/ChatWS/ChatWS"
+    "last_opened_file_path": "C:/Users/Constantin/Documents/Studium/proggen3/prog3_tomcat_ChatClient/Server/web"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Constantin\Documents\Studium\proggen3\prog3_tomcat_ChatClient\Server\web" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.medieninformatik.server" />
       <recent name="de.medieninformatik.common" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.prog3_tomcat_ChatClient:Client [run]">
+  <component name="RunManager" selected="Gradle.prog3_tomcat_ChatClient:Server [run]">
     <configuration name="prog3_tomcat_ChatClient:Client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -163,8 +178,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.prog3_tomcat_ChatClient:Client [run]" />
         <item itemvalue="Gradle.prog3_tomcat_ChatClient:Server [run]" />
+        <item itemvalue="Gradle.prog3_tomcat_ChatClient:Client [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -176,8 +191,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668409672425</updated>
-      <workItem from="1669108364508" duration="2519000" />
+      <workItem from="1669108364508" duration="6151000" />
     </task>
+    <task id="LOCAL-00001" summary="impl NewsWS">
+      <created>1669111068180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669111068180</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,5 +216,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="impl NewsWS" />
+    <option name="LAST_COMMIT_MESSAGE" value="impl NewsWS" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
